@@ -1,0 +1,60 @@
+.timer {
+  font-size: 5em;
+}
+@keyframes bounce {
+  10%{
+    transform:translateY(5%);
+
+  }
+  20%{
+    transform:translateY(-5%);
+
+  }
+  30%{
+    transform:translateY(5%);
+
+  }
+  40%{
+    transform:translateY(-5%);
+
+  }
+  50%{
+    transform:translateY(5%);
+    color :yellow;
+
+  }
+  60%{
+    transform:translateY(-5%);
+    color :orange;
+  }
+  70%{
+    transform:translateY(5%);
+    color :red;
+  }
+  80%{
+    transform:translateY(-5%);
+    color :red;
+  }
+  90%{
+    transform:translateY(+5%);
+    color :red;
+  }
+  100%{
+    transform:translateY(0%);
+    color :bisque;
+  }
+}
+.header {
+  margin-top: 10%;
+}
+.header,
+.timer {
+  text-align: center;
+  color: bisque;
+}
+
+@media only screen and (max-width: 500px) {
+  .timer {
+    font-size: 2em;
+  }
+}

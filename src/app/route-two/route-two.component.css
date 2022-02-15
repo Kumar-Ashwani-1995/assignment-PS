@@ -1,0 +1,136 @@
+body{
+    margin: 0 10px;
+}
+.box{
+    display: grid;
+    border: 2px solid rgba(16, 24, 32, 0.795);
+    min-height: 210px;
+    grid-template-columns: 3fr 4fr; 
+    /* border-radius: 0 10px 0 0 ; */
+    position: relative;
+    background-color: white;
+    
+}
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+.operation{
+    display: flex;
+    justify-content: end;
+    
+    padding: 0 0 20px 0;
+}
+.grid{
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.list{
+    border-radius: 0 5px 5px 0;
+    margin-right: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+
+    
+}
+.dropDownSort{
+    border-radius: 5px ;
+    height: 100%;
+    border: 2px solid rgba(16, 24, 32, 0.795);
+    background: #eee;
+}
+.image{
+    justify-self: center;
+    align-self: center;
+    max-height: 160px;
+    max-width: 90px;
+    /* overflow: hidden; */
+    /* width: 100%; */
+    /* height="160px" width="" */
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    /* background: #eee; */
+    justify-content: space-between;
+    /* width: 100%; */
+}
+.otherDetails{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: 15px;
+    /* padding: 0 10px 10px 0; */
+}
+.counter{
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 5px 5px;
+}
+.title{
+    cursor: pointer;
+    font-size: large;
+    /* background-color: rgba(16, 24, 32, 0.795); */
+    min-height: 50px;
+    /* color: bisque; */
+}
+
+.review{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    padding: 5%; 
+    background-color: rgba(16, 24, 32, 0.795);
+    color: bisque;
+    margin-left: 10px;
+    /* border: 1px solid rgb(5, 4, 4); */
+    /* border-radius: 50%; */
+}
+.text{
+    font-size: xx-small;
+}
+
+.title,.description{
+    padding: 10px 5px 10px 5px;
+}
+@media only screen and (max-width: 900px){
+
+    .box{
+        grid-template-columns: 6fr; 
+        grid-template-rows: 3fr 3fr;
+        height: 100%;
+    }
+    .title{
+        padding: 5px 2px 0 2px;
+    }
+}
+.valButton{
+    margin-top: 10px;
+    border-radius: 50%;
+    /* text-align: center; */
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.valCount{
+     /* padding: 3px 5px 5px 5px; */
+    margin: 0 5px;
+    /* border: 1px solid grey;  */
+}
+.price{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.box-container{
+    display: grid;
+    grid-template-columns:6fr 6fr;
+    grid-gap:30px;
+}
+
+

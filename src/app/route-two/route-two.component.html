@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Route-Two</h1></header>
+    <main>
+        <div class="operation">
+            <button class="grid" title="Grid" (click)="grid4()">▦</button>
+            <button class="list" title="List" (click)="list2()">☷</button>
+            <span class="dropDownbox">
+                <label >Sort by 
+            <select class="dropDownSort" name="sort" id="sortBy" (change)="sort($event)">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="LowToHigh">Low To High</option>
+                <option value="HighToLow">High To Low</option>
+                <option value="Popularity">Popularity</option>
+            </select>
+        </label>
+            </span>
+            
+        </div>
+        <div class="box-container">
+        <div class="box" *ngFor="let prod of product">
+            
+            
+
+                <img class="image" [src]="prod.image" [alt]="'Image for '+prod.title" >
+                <span class="details">
+                    <span class="title detailBox"><strong>{{prod.title}}</strong></span>
+                    <span class="description detailBox"><small>{{prod.description | shortenText:45}}</small></span>
+                    <span class="otherDetails">
+                        
+                        <span class="review">
+                        <span class="rating detailBox">{{prod.rating.rate}}⭐</span>
+                        <span class="count detailBox text">{{prod.rating.count}}<small> 🧑🏻 reviews</small>  </span>
+                        </span>
+                        <span class="price detailBox"><strong>{{prod.price}}$</strong>
+                        <span class="counter">
+                            <button class="valButton" (click)="removeProd(prod.id)"><strong>-</strong> </button>
+                            <span class="valCount">{{prod.count}}</span> 
+                            <button class="valButton" (click)="addProd(prod.id)"><strong>+</strong> </button>
+                        </span>
+                    </span>
+                    </span>
+                    
+                </span>
+                
+
+            
+        </div>
+    </div>
+    </main>
+    
+</body>
+</html>

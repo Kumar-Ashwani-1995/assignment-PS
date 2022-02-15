@@ -1,0 +1,35 @@
+body{
+  margin: 0 10px;
+}
+.Thead {
+  display: flex;
+  /* flex-direction: column; */
+}
+.Tbody {
+  display: flex;
+  flex-direction: column;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.heading{
+  cursor: pointer;
+}
+.sortIcon{
+  float: right;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: rgba(16, 24, 32, 0.795);
+  color: bisque;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

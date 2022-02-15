@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Case Study</title>
+</head>
+<body>
+  <header class="container-heading">
+    
+    <div class="header">
+      
+        
+        <div class="dropdown" >
+          <h1 tabindex="-1" class="dropbtn"><span class="menuIcon">☰</span> 
+          </h1>
+          <div  class="dropdown-content">
+            <a class="navLinkHover" routerLink="route-1" routerLinkActive="active">Route-One</a>
+            <a class="navLinkHover" routerLink="route-2" routerLinkActive="active">Route-Two</a>
+            <a class="navLinkHover" routerLink="route-3" routerLinkActive="active">Route-Three</a>
+            <a class="navLinkHover" routerLink="route-4" routerLinkActive="active">Route-Four</a>
+            <a class="navLinkHover" routerLink="route-5" routerLinkActive="active">Route-Five</a>
+            <a class="navLinkHover" routerLink="route-6" routerLinkActive="active">Route-Six</a>
+            <!-- <p>version 1.0</p> -->
+          </div>
+        </div> 
+      <h2 class="assigment" ><a  routerLink="">Assignment</a></h2>
+      </div>
+    <nav class="navMainLink">
+     
+      <a routerLink="route-1" routerLinkActive="active">Route-One</a>
+      <a routerLink="route-2" routerLinkActive="active">Route-Two</a>
+      <a routerLink="route-3" routerLinkActive="active">Route-Three</a>
+      <a routerLink="route-4" routerLinkActive="active">Route-Four</a>
+      <a routerLink="route-5" routerLinkActive="active">Route-Five</a>
+      <a routerLink="route-6" routerLinkActive="active">Route-Six</a>
+      
+    </nav>
+    
+  </header>
+  
+  <main class="mainClass">
+    <router-outlet></router-outlet>
+  </main>
+  <footer></footer>
+  
+</body>
+</html>

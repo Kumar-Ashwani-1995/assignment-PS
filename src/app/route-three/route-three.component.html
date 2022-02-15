@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading">
+            Route-Three<em>(Using Input and Output)</em>
+        </h1>
+    </header>
+    <main class="main">
+        <!-- {{counterVal}} -->
+        <div id="div1">
+            <app-component1 [counterTimer]="counterVal"></app-component1>
+        </div>
+        <div id="div2">
+            <app-component2 (counter)="counterVal=$event" (StartPauseArr)="startPauseArray=$event"></app-component2>
+        </div>
+        <div id="div3">
+            <app-component3 [startPauseArrayVal]="startPauseArray"></app-component3>
+        </div>
+        <div id="div4">
+            <app-component4 [startPauseVal]="startPauseArray"></app-component4>
+        </div>
+    </main>
+    
+    
+    
+</body>
+</html>

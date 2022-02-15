@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <header><h1>
+        Route-six
+    </h1></header>
+    <main>
+        <section  class="alert">
+            <span class="content">
+                <h1>{{clicked}}<small>th</small> div clicked</h1>
+                <button class="closeButton" (keydown.esc)="close()" (click)="close()">✖</button>
+            </span>
+            
+        </section>
+        <section class="inBox">
+            <div class="container" *ngFor="let ele of box">
+                <div class="box">
+                    <span class="text">{{ele+1}}<small>th</small> div </span>
+                    <button class="clickButton" (click)="divClicked(ele)">Click</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+.main {
+  margin: 5%;
+  height: 100px;
+  overflow-y: auto;
+}
+.head{
+  text-align: center;
+}
+.reset{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.reset:active{
+  transform: rotate(-160deg); 
+}
+
+/* .clickArr{
+
+} */
+

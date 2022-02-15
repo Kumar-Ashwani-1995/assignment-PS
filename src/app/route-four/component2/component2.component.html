@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="timeForm">
+            <form (ngSubmit)=StartPause(myForm) #myForm="ngForm">
+                <div class="inputTimer">
+                    <label for="enterTime">Enter Timer Limit </label>
+                    <input type="number" id="enterTime" ngModel  name="enterTime" min="1" required #enterTime="ngModel">
+                    <small class="errMsg" *ngIf="enterTime.invalid && (enterTime.dirty || enterTime.touched)">Required & should be greater than 0</small>
+                </div>
+                <div class="buttonTimer">
+                    <button class="startBtn" *ngIf="Strt" type="submit" 
+                    [disabled]="!myForm.valid"
+                    >{{buttonName}}</button>
+                    <button class="pauseBtn" *ngIf="!Strt" type="submit" [disabled]="!myForm.valid">Pause </button>
+                    <button class="resetBtn" type="reset" (click)=reset()>Reset</button>
+                </div>
+            </form>
+            
+            
+        </section>
+        <section class="parr">
+            <div class="pause">
+                <div  *ngFor="let p of pausedArray">
+                    <span>{{p}}</span>
+                </div>
+            </div>
+            
+        </section>
+     
+    </main>
+    
+</body>
+</html>
