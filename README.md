@@ -1,3 +1,7 @@
+# Deployed on server at
+
+https://assignment-ps-one.vercel.app
+
 # Assignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
